@@ -65,6 +65,12 @@ function hovering(){
 var slider = document.getElementById("myRange");
 var output = document.getElementById("value");
 output.innerHTML = "Dimensions: " + slider.value + " x " + slider.value;
+output.style.marginTop = "-20px";
+output.style.maxWidth = "150px";
+output.style.fontFamily = "kayak";
+
+output.style.color = "white";
+// output.style.marginLeft = "37.5px";
 slider.oninput = function() {
     output.innerHTML = "Dimensions: " + this.value + " x " + this.value;
 }
